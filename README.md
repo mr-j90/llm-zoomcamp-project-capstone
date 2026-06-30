@@ -1,8 +1,6 @@
 # llm-zoomcamp-project-capstone
 
-## A Hybrid RAG System for Tabular HR Data
-
-> *(working title — rename to taste, e.g. "RosterIQ", "HR Data Q&A")*
+## HR Data Q&A  -- A Hybrid RAG System for Tabular HR Data
 
 A retrieval-augmented question-answering system over tabular HR data (ADP-style
 employee/roster exports). Roster-RAG accepts a CSV through a guided **workflow**,
@@ -27,7 +25,7 @@ But some HR questions *are* fuzzy and descriptive — *"Tell me about our senior
 ICs"*, *"Who has machine-learning experience?"* — and those are where semantic
 retrieval shines.
 
-**Roster-RAG treats this as a routing problem.** A lightweight router classifies
+**HR Data Q&A treats this as a routing problem.** A lightweight router classifies
 intent and dispatches to one of two tools: a structured-query tool over DuckDB for
 analytical questions, and a semantic-search tool over a vector index for descriptive
 ones. Both return grounded context that the LLM uses to answer — no ungrounded
